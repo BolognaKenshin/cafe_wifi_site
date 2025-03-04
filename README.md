@@ -1,4 +1,4 @@
-#Cafépedia
+# Cafépedia
 ___
 A basic little cafe-database-website I made for a course project. It displays data from a cafe.db file, showing the user information such as if there's power and wifi available, seating, restrooms and so on. 
 It also lets the user add/remove entries as well, however user's can't add two locations with the same name. The site should also display properly on multiple screensizes. 
@@ -8,7 +8,7 @@ It also lets the user add/remove entries as well, however user's can't add two l
 ![Search Cafe by City](screenshots/cafe-search.png)
 ![Add Cafe](screenshots/cafe-add.png)
 
-#How It's Made:
+## How It's Made:
 ___
 Tech used: HTML, CSS, Python, Flask/Bootstrap, SQLAlchemy, wtforms, flask_wtf 
 
@@ -16,11 +16,11 @@ This was a project from an online course which builds upon a much earlier lesson
 
 All routing is handled by Flask, styling is a combination of Bootstrap and CSS. 
 
-#To use:
+## To use:
 ___
 Beyond copying the files and installing the "requirements.txt" file, flask_bootstrap can be a little peculiar. Trying to download this via PyCharm kept failing, requiring the user to instead install "Bootstrap-Flask" in their terminal to get flask_bootstrap to run properly. The user will also need to set a "FLASK_KEY" environmental variable for the program to run, as it's what flask will pull and use as the Secret Key for CSRF protection.
 
-#Lessons Learned:
+## Lessons Learned:
 ___
 This was a project from an online course which builds upon a much earlier lesson on making APIs. We were required to make a Café website around the .db file provided in that project. The preset requirements of the file are why some of the things were made to function the way they do (no log-in or parent/child relationship with posts, so on. I started by making the design in Canva and finding a some free image/graphics I would be able to use. From there, I built my website page-by-page to match my design as closely as I could. I decided to go with the coffee/caramel/cream color scheme for the whole Café theme. 
 
