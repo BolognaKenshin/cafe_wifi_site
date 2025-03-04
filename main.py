@@ -2,7 +2,6 @@ from flask import Flask, redirect, render_template, request, url_for
 from flask_bootstrap import Bootstrap5
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import IntegrityError
-
 from forms import SearchCafeForm, AddCafeForm
 import os
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
