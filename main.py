@@ -20,7 +20,6 @@ db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 Bootstrap5(app)
 
-
 # Cafe TABLE Configuration
 class Cafe(db.Model):
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
