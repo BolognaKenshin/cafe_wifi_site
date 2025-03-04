@@ -12,7 +12,7 @@ It also lets the user add/remove entries as well, however user's can't add two l
 
 Tech used: HTML, CSS, Python, Flask/Bootstrap, SQLAlchemy, wtforms, flask_wtf 
 
-This was a project from an online course which builds upon a much earlier lesson on making APIs. Project simple retrieves all listings from a local "cafes.db" file and displays them on the "All Cafes" page. The same template for this page is also used to display the results from the "Search Cafe" page, which allows users to search City Names and retrieve any matched found in the database. 
+App retrieves all listings from a local "cafes.db" file and displays them on the "All Cafes" page. The same template for this page is also used to display the results from the "Search Cafe" page, which allows users to search City Names and retrieve any matched found in the database. 
 
 All routing is handled by Flask, styling is a combination of Bootstrap and CSS. 
 
