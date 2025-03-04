@@ -1,0 +1,10 @@
+{% extends 'header.html' %} {% block content %}
+<div id="home-page-welcome" class="container">
+    <h1 id="welcome-text">Welcome to Cafépedia!</h1>
+    <p id="home-page-text">Browse listed cafés to see if any near provide access<br>
+        to wi-fi, power and more! Add new cafés in you’ve<br>
+        visited or report closings to keep the keep the listings<br>
+        updated. </p>
+    <button class="btn homepage-btn" onclick="window.location.href='{{ url_for( 'get_all_cafes' ) }}'">Browse</button>
+</div>
+{% endblock %}

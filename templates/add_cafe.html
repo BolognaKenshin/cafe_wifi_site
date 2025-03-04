@@ -1,0 +1,18 @@
+{% from 'bootstrap5/form.html' import render_form %}
+{% extends 'header.html' %} {% block content %}
+
+<div id="add-cafe-div" class="container">
+    <div class="row"></div>
+    <h1 id="add-cafe-title">Add a Café</h1>
+    {{ render_form(form, novalidate=True) }}
+
+    {% if errors %}
+        <ul>
+        {% for error in errors: %}
+            <li>{{ error }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+</div>
+
+{% endblock %}

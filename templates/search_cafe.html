@@ -1,0 +1,9 @@
+{% from "bootstrap5/form.html" import render_form %}
+{% extends 'header.html' %} {% block content %}
+
+<div id="home-page-welcome" class="container">
+    <h1 id="welcome-text">Search Cafépedia</h1>
+    {{ render_form(form) }}
+</div>
+
+{% endblock %}
