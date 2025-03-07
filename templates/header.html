@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafépedia</title>
     <!-- Bootstrap -->
         {{ bootstrap.load_css() }}
@@ -15,11 +16,11 @@
 <body id="{{ content_id }}">
     <div class="container-fluid" id="top-bar">
         <div class="row">
-            <div id="nav-logo-div" class="col-9 col-xl-8 col-lg-7 col-md-6 col-sm-5">
+            <div id="nav-logo-div" class="col-xl-9 col-lg-7 col-md-6 col-sm-12">
                 <img src="/static/assets/img/coffee-cup.png" alt="Steaming coffee cup" id="coffee-cup">
                 <a id="top-bar-title" href="{{ url_for('home') }}">Cafépedia</a>
             </div>
-            <div id="nav-links-div" class="col-3 col-xl-4 col-lg-5 col-md-6">
+            <div id="nav-links-div" class="col-xl-3 col-lg-5 col-md-6 col-sm-12">
                 <a class="top-bar-link" href="{{ url_for ('get_all_cafes') }}">All Cafés</a>
                 <a class="top-bar-link" href="{{ url_for ('search_cafe') }}">Search Café</a>
                 <a class="top-bar-link" href="{{ url_for ('add_cafe') }}">Add Café</a>
