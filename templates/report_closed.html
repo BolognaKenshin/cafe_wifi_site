@@ -3,10 +3,10 @@
 <div id="results-container-parent">
     <div id="results-container">
         <div class="cafe-listing row">
-            <div class="image-div col-4">
+            <div class="image-div col-xl-4">
                   <img class="cafe_img" src="{{ cafe.img_url }}" alt="User-provided café image" onerror="this.onerror=null; this.src='/static/assets/img/no-image-available.jpg';">
             </div>
-            <div class="cafe-name-div col-5">
+            <div class="cafe-name-div col-xl-5">
                 <h1 class="cafe-name">{{ cafe.name }}</h1>
                 <ul>
                     <li>WiFi: {{ cafe.has_wifi }}</li>
@@ -17,13 +17,12 @@
                     <li>Coffee Price: {{ cafe.coffee_price }}</li>
                 </ul>
             </div>
-            <div class="cafe-location-div col-3">
+            <div class="cafe-location-div col-xl-3">
                 <h2 class="cafe-location">{{ cafe.location }}</h2>
-                <button class="btn listing-btn" id="map-btn" onclick="window.location.href='{{ cafe.map_url }}'">Map Link</button>
+                <button class="btn listing-btn map-btn" onclick="window.location.href='{{ cafe.map_url }}'">Map Link</button>
                 <button class="btn listing-btn" onclick="window.location.href='{{ url_for('delete', delete_listing=True, cafe_id=cafe.id) }}'">Delete</button>
             </div>
         </div>
     </div>
 </div>
-
 {% endblock %}

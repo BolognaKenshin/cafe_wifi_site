@@ -11,6 +11,12 @@ html, body {
     text-align: center;
 }
 
+@media (max-width: 576px) {
+    .add-bar {
+        width: 300px;
+    }
+}
+
 #add-btn {
     margin-top: 25px;
 }
@@ -27,13 +33,19 @@ html, body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 75vh;
+    max-width: 800px;
     min-height: 55vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+}
+
+@media (max-width: 700px){
+    #add-cafe-div {
+        border-radius: 0px;
+    }
 }
 
 #add-cafe-title {
@@ -84,8 +96,11 @@ html, body {
     justify-content: center;
     min-height: 250px;
     width: 75%;
-    margin-top: 25px;
+    margin-top: 30px;
+    padding: 10px;
 }
+
+
 
 .cafe-location {
     color: #371f13;
@@ -95,11 +110,39 @@ html, body {
     margin-right: 0px;
 }
 
+@media (max-width: 1703px) {
+    .cafe-location {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 1703px) {
+    .cafe-location-div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 .cafe-name {
     color: #371f13;
     font-family: "Fredoka";
     font-size: 28px;
     font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+    .cafe-name-div {
+        display: flex;
+        flex-direction: column;
+        list-style-position: inside;
+        list-style-position: inside;
+        margin-top: 15px;
+        text-align: center;
+    }
 }
 
 #city-search-bar {
@@ -170,17 +213,33 @@ html, body {
     flex-direction: column;
     max-width: 720px;
     min-height: 55vh;
-    margin-top: 20vh;
+    margin-top: 15vh;
     opacity: 0.9;
     text-align: center;
 }
 
+@media (max-width: 700px){
+    #home-page-welcome {
+        border-radius: 0px;
+    }
+}
+
 .image-div {
+    align-items: center;
     border-radius: 25px;
-    min-height: 90%;
-    width: 30%;
+    display: flex;
+    justify-content: center;
+    height: 225px;
+    width: 250px;
     overflow: hidden;
     position: relative;
+    margin-right: 20px;
+}
+
+@media (max-width: 1703px) {
+    .image-div {
+        margin-right: 0;
+    }
 }
 
 li {
@@ -202,9 +261,15 @@ li {
     font-size: 16px;
 }
 
-#map-btn {
+.map-btn {
     margin-top: 40px;
     margin-bottom: 20px;
+}
+
+@media (max-width: 1703px) {
+    .map-btn {
+        margin-top: 20px;
+    }
 }
 
 #nav-logo-div{
@@ -234,6 +299,7 @@ li {
     font-family: "Fredoka";
     font-weight: 600;
     font-size: 40px;
+    text-align: center;
 }
 
 #results-container {
@@ -242,7 +308,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1000px;
+    width: 65%;
     min-height: 100%;
     overflow-y: auto;
 }
@@ -300,6 +366,10 @@ li {
 
 #top-bar-title:hover {
     color: #b67233;
+}
+
+ul {
+    padding-right: 2em;
 }
 
 #welcome-text {
