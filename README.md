@@ -8,6 +8,10 @@ It also lets the user add/remove entries as well, however user's can't add two l
 ![Search Cafe by City](screenshots/cafe-search.png)
 ![Add Cafe](screenshots/cafe-add.png)
 
+### Mobile/Small Screen Example:
+
+![Mobile Version](screenshots/cafe-mobile.png)
+
 ## How It's Made:
 
 Tech used: HTML, CSS, Python, Flask/Bootstrap, SQLAlchemy, wtforms, flask_wtf 

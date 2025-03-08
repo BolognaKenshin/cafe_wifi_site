@@ -135,13 +135,16 @@ html, body {
 }
 
 @media (max-width: 1200px) {
+    .cafe-name {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
     .cafe-name-div {
         display: flex;
         flex-direction: column;
-        list-style-position: inside;
-        list-style-position: inside;
         margin-top: 15px;
-        text-align: center;
     }
 }
 
@@ -242,12 +245,31 @@ html, body {
     }
 }
 
-li {
+ul li {
     color: #371f13;
     font-family: "Nunito";
     font-size: 16px;
     font-weight: 500;
+    white-space: nowrap;
+    padding-right: 2em;
 }
+
+@media (max-width: 1200px) {
+    ul li {
+        text-align: center;
+        list-style-position: inside;
+    }
+}
+
+@media (max-width: 415px) {
+    ul li {
+        text-align: left;
+        list-style-position: outside;
+        margin-left: -5px;
+        padding-right: 0px;
+    }
+}
+
 
 .listing-btn {
     color: white;
@@ -371,9 +393,7 @@ li {
     color: #b67233;
 }
 
-ul {
-    padding-right: 2em;
-}
+
 
 #welcome-text {
     color: white;
