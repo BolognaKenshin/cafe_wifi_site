@@ -283,7 +283,8 @@ li {
 @media (max-width: 768px) {
     #nav-logo-div {
         justify-content: center;
-        padding-left: 0px;
+        padding-left: 10px;
+        width: 100%;
     }
 }
 
@@ -363,6 +364,8 @@ li {
     margin-left: 10px;
     text-decoration: none;
 }
+
+
 
 #top-bar-title:hover {
     color: #b67233;
